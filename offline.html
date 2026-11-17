@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="robots" content="noindex" />
+    <title>Нет сети · Лотос Детейлинг</title>
+    <!--
+      Самостоятельная страница без скриптов приложения. Service worker показывает её,
+      когда нужной страницы нет в кэше, под чужим адресом (например, /garage) —
+      страница Next.js в такой ситуации пыталась бы перезагрузить себя по кругу.
+    -->
+    <style>
+      :root { color-scheme: dark; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100svh;
+        background: #0a0a0a;
+        color: #dfe5ea;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: calc(env(safe-area-inset-top) + 28px) 20px calc(env(safe-area-inset-bottom) + 40px);
+      }
+      .logo { display: flex; align-items: center; gap: 12px; color: #f4f7f9; font-weight: 600; font-size: 19px; letter-spacing: -0.03em; }
+      h1 { margin: 72px 0 0; font-size: clamp(34px, 9vw, 56px); line-height: 1.02; letter-spacing: -0.04em; color: #f4f7f9; font-weight: 600; }
+      p { margin: 16px 0 0; max-width: 46ch; font-size: 16px; line-height: 1.5; color: rgb(214 224 232 / 0.68); }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+      a, button {
+        display: inline-flex; align-items: center; height: 56px; padding: 0 32px; border-radius: 999px;
+        font: inherit; font-size: 16px; font-weight: 500; text-decoration: none; cursor: pointer; border: 0;
+      }
+      button { background: #6fd3d0; color: #04201f; font-weight: 600; box-shadow: 0 10px 34px -10px rgb(111 211 208 / 0.65); }
+      a { background: #111416; color: #dfe5ea; box-shadow: inset 0 0 0 1px rgb(200 220 235 / 0.18); }
+      a:focus-visible, button:focus-visible { outline: 2px solid #6fd3d0; outline-offset: 3px; }
+      .logo img { width: 44px; height: 44px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="/brand/logo.svg" alt="" />
+        Лотос Детейлинг
+      </div>
+      <h1>Нет подключения</h1>
+      <p>
+        Эта страница не открывается без интернета. Без сети заявка не отправляется.
+        Если вы начали запись, выбранные услуги, дата и время сохранены на этом устройстве:
+        продолжите, когда сеть появится. Позвонить студии: <a href="tel:+79876220999" style="all:unset;color:#6fd3d0;cursor:pointer">+7 987 622-09-99</a>.
+      </p>
+      <div class="actions">
+        <button type="button" onclick="location.reload()">Попробовать снова</button>
+        <a href="./">На главную</a>
+      </div>
+    </main>
+      <script>
+      // Сеть вернулась — пробуем открыть нужную страницу снова. Только если страница
+      // действительно открылась без сети и пользователь не уходит с неё сам:
+      // браузер может прислать «online» в момент перехода по ссылке.
+      (function () {
+        var leaving = false;
+        var wasOffline = !navigator.onLine;
+        window.addEventListener("offline", function () { wasOffline = true; });
+        window.addEventListener("pagehide", function () { leaving = true; });
+        document.addEventListener("click", function (e) {
+          if (e.target.closest && e.target.closest("a")) leaving = true;
+        });
+        window.addEventListener("online", function () {
+          if (wasOffline && navigator.onLine && !leaving) location.reload();
+        });
+      })();
+    </script>
+  </body>
+</html>

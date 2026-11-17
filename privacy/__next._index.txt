@@ -1,0 +1,23 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/1fzobe-5dtfg2.js"
+3:"/_next/static/chunks/2fxo7t787hc55.js"
+4:"/_next/static/chunks/299qt39i9ernp.js"
+5:I[45745,["$2","$3","$4"],"Header"]
+6:I[39756,["$2","$3","$4"],"default"]
+7:"/_next/static/chunks/306l4kye9fggg.js"
+8:I[58298,["$2","$3","$4","$7"],"default"]
+9:I[37457,["$2","$3","$4"],"default"]
+a:I[50417,["$2","$3","$4"],"BottomNav"]
+b:I[85807,["$2","$3","$4"],"SoonToast"]
+c:I[30869,["$2","$3","$4"],"ThemeSync"]
+d:I[92766,["$2","$3","$4"],"PwaRegister"]
+e:I[71719,["$2","$3","$4"],"GisLinks"]
+f:I[53985,["$2","$3","$4"],"AppStatus"]
+:HL["/_next/static/chunks/29h-ppd5ku6s8.css","style"]
+11:X
+0:{"t":{"t":{"s":"","h":16,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/29h-ppd5ku6s8.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/1fzobe-5dtfg2.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/2fxo7t787hc55.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/299qt39i9ernp.js","async":true}]],["$","html",null,{"lang":"ru","data-theme":"dark","className":"lJe08G_variable antialiased","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(function(){try{var p=null;try{p=localStorage.getItem(\"md-theme\")}catch(e){}var d=true;var t=d?\"dark\":\"light\";document.documentElement.dataset.theme=t;var m=document.createElement(\"meta\");m.name=\"theme-color\";m.id=\"md-theme-color\";m.content={\"light\":\"#0a0a0a\",\"dark\":\"#0a0a0a\"}[t];document.head.prepend(m)}catch(e){}})()"}}],["$","meta",null,{"name":"theme-color","media":"(prefers-color-scheme: light)","content":"#0a0a0a"}],["$","meta",null,{"name":"theme-color","media":"(prefers-color-scheme: dark)","content":"#0a0a0a"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"AutomotiveBusiness\",\"name\":\"Лотос Детейлинг\",\"alternateName\":\"LOTOS DETAILING\",\"slogan\":\"Делаем красиво. Защищаем надолго.\",\"description\":\"Премиальный уход за автомобилями в Уфе\",\"url\":\"https://ufa-lotus.github.io/\",\"telephone\":\"+79876220999\",\"address\":[{\"@type\":\"PostalAddress\",\"streetAddress\":\"г. Уфа, ул. Жуковского, 27Б\",\"addressLocality\":\"Уфа\",\"addressRegion\":\"Республика Башкортостан\",\"addressCountry\":\"RU\"},{\"@type\":\"PostalAddress\",\"streetAddress\":\"с. Михайловка, ул. Ленина, 41/4\",\"addressLocality\":\"Михайловка\",\"addressRegion\":\"Республика Башкортостан\",\"addressCountry\":\"RU\",\"postalCode\":\"450511\"}],\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"10:00\",\"closes\":\"20:00\"}],\"sameAs\":[\"https://t.me/lotosdetail\",\"https://vk.ru/lotosdetail\",\"https://www.instagram.com/lotos.detailing/\",\"https://2gis.ru/ufa/firm/70000001062603744\"]}"}}]]}],["$","body",null,{"className":"min-h-svh bg-mist text-graphite","children":[["$","$L5",null,{}],["$","$L6",null,{"parallelRouterKey":"children","error":"$8","errorStyles":[],"errorScripts":[["$","script","script-0",{"src":"/_next/static/chunks/306l4kye9fggg.js","async":true}]],"template":["$","$L9",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}],["$","$La",null,{}],["$","$Lb",null,{}],["$","$Lc",null,{}],["$","$Ld",null,{}],["$","$Le",null,{}],["$","$Lf",null,{}]]}]]}]]}],"p":"$@10","v":null,"s":"$11"}}},"a":"$@12","u":"$@13","b":"2czFY80u3ZQbqA_hnsGgE"}
+11:300
+13:true
+11:C
+12:0
+10:"$undefined"
